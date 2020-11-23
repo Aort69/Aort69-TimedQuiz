@@ -1,6 +1,8 @@
 var points = 0
 var counter = 0;
 var count = 40;
+
+
 var interval = setInterval(function () {
   document.querySelector("div1").innerHTML = count;
   count--;
@@ -28,7 +30,7 @@ function questioncycle(i) {
     quizEnd()
   }
   //dynamically write html for choices and questions
-  document.querySelector("main").innerHTML = `<h2>
+  document.querySelector(".game").innerHTML = `<h2>
 ${questions[i][0]}
 </h2>
 <h3 id="choice1">${questions[i][1]}</h3>
@@ -63,7 +65,7 @@ ${questions[i][0]}
     questioncycle(counter);
   });
 }
+
 questioncycle(counter);
 quizEnd();
-// create time limits for question answers
 // save high scores in local storage
