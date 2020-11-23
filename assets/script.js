@@ -1,8 +1,10 @@
 var points = 0
 var counter = 0;
 var count = 40;
+var button = document.querySelector("#btn")
 
-
+function quizStart() {
+  button.style.display == "none"
 var interval = setInterval(function () {
   document.querySelector("div1").innerHTML = count;
   count--;
@@ -12,7 +14,7 @@ var interval = setInterval(function () {
     alert("You're out of time!");
   }
 }, 1000);
-
+}
 var questions = [
   ["1. Console log is used by coders to debug and track their code.", "True", "False", "True"],
   ["2. Your computer identifies Java Script files by looking for .css at the end of the file name.", "True", "False", "True"],
