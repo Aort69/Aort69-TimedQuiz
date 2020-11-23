@@ -3,7 +3,10 @@ var counter = 0;
 var count = 40;
 var button = document.getElementById("#btn")
 
+document.getElementById("game").style.display = "none"
+
 function quizStart() {
+  document.getElementById("game").style.display="block";
   document.getElementById("btn").style.display = "none"
   var interval = setInterval(function () {
   document.querySelector("div1").innerHTML = count;
