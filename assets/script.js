@@ -71,6 +71,7 @@ ${questions[i][0]}
     questioncycle(counter);
   });
 }
+
 questioncycle(counter);
 quizEnd();
 // save high scores in local storage
