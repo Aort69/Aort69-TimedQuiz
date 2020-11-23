@@ -36,7 +36,7 @@ function questioncycle(i) {
     quizEnd()
   }
   //dynamically write html for choices and questions
-  document.querySelector(".game").innerHTML = `<h2>
+  document.querySelector("#game").innerHTML = `<h2>
 ${questions[i][0]}
 </h2>
 <h3 id="choice1">${questions[i][1]}</h3>
