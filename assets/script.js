@@ -1,11 +1,11 @@
 var points = 0
 var counter = 0;
 var count = 40;
-var button = document.querySelector("#btn")
+var button = document.getElementById("#btn")
 
 function quizStart() {
-  button.style.display == "none"
-var interval = setInterval(function () {
+  document.getElementById("btn").style.display = "none"
+  var interval = setInterval(function () {
   document.querySelector("div1").innerHTML = count;
   count--;
   if (count === -1) {
