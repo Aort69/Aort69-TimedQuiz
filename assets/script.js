@@ -12,6 +12,7 @@ var interval = setInterval(function () {
     alert("You're out of time!");
   }
 }, 1000);
+
 var questions = [
   ["1. Console log is used by coders to debug and track their code.", "True", "False", "True"],
   ["2. Your computer identifies Java Script files by looking for .css at the end of the file name.", "True", "False", "True"],
@@ -65,7 +66,6 @@ ${questions[i][0]}
     questioncycle(counter);
   });
 }
-
 questioncycle(counter);
 quizEnd();
 // save high scores in local storage
